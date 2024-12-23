@@ -1,10 +1,8 @@
 from src.logger import logging
 from src.exception import USvisaException
 import sys
-logging.info("log have been created")
+from src.pipline.training_pipeline import *
 
-
-try:
-    a=3/0
-except Exception as e:
-    raise USvisaException(e,sys)
+abc=TrainPipeline()
+a=abc.start_data_ingestion()
+abc.start_data_validation(a)
