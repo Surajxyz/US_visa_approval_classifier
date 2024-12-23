@@ -24,8 +24,9 @@ ML project
 
 - Run application without container in local
    ```python app.py```
-
-
+- Run the application in docker container
+   ```docker run Dockerfile```
+   
 - Summary
 
 Created a end to end machine learning using visa approval project which is having following components:-
